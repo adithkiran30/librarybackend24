@@ -6,12 +6,12 @@ const router = express.Router()
 
 router.get('/', getAllAuthors)
 
-router.get('/ :authorId', getAuthorById)
+router.get('/:authorId', getAuthorById)
 
 router.post('/', addNewAuthor)
 
-router.patch('/ :authorId', updateAuthor )
+router.patch('/:authorId', updateAuthor )
 
-router.delete('/ :authorId', deleteAuthor )
+router.delete('/:authorId', deleteAuthor )
   
   module.exports = router
